@@ -2,7 +2,7 @@
 
 Overview
 
-This project implements house price prediction using the California Housing Dataset and the XGBoost Regressor. It involves data preprocessing, exploratory data analysis (EDA), feature correlation analysis, and model evaluation using various metrics.
+This project utilizes XGBoost Regression to predict house prices in California using the California Housing Dataset. It involves data preprocessing, exploratory data analysis (EDA), correlation analysis, model training, and evaluation to generate accurate price predictions.
 
 Dataset
 
@@ -35,29 +35,32 @@ Steps in the Project
   
 - Exploratory Data Analysis (EDA): Understanding feature distributions, correlation analysis
   
-- Model Training: Using XGBoost Regressor to fit the training data
+- Model Training: -  Applying XGBoost Regressor to train a predictive model.
   
-- Evaluation: Computing metrics like R² score, mean absolute error, and mean squared error
-  
-Results
+- Model Evaluation – Assessing performance using R² Score, Mean Absolute Error (MAE), and Mean Squared Error (MSE).
 
-After training the model on the dataset, the performance was evaluated using:
+- Visualization – Plotting actual vs. predicted house prices to analyze performance.
+  
+Results & Insights
 
-- R² Score: Measures how well the model explains variability in house prices
+The trained model effectively predicts house prices based on key features. Evaluation metrics used include:
+
+- R² Score – Measures how well the model explains house price variability.
   
-- Mean Absolute Error (MAE): Measures average absolute prediction error
+- Mean Absolute Error (MAE) – Indicates the average absolute prediction error.
   
-- Mean Squared Error (MSE): Measures average squared prediction error
+- Mean Squared Error (MSE) – Measures squared prediction deviations.
+
   
 Visualizations
-
-- A heatmap of feature correlations to understand relationships between variables
+- Feature correlation heatmap – Identifies key relationships between variables.
   
-- Scatter plots and histograms for feature distributions
+- Scatter plot – Displays actual vs. predicted prices.
+
   
 Usage
 
-Clone this repository and run the Python script to train and evaluate the model:
+Clone the repository and execute the Python script to train and test the model:
 
 python house_price_prediction.py
 
